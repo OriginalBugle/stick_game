@@ -1,4 +1,6 @@
 import os
+import random
+from colorama import Fore, Back, Style
 
 #déclaration des variables
 joueur=1
@@ -6,7 +8,7 @@ i=1
 nombre_batonnets=21
 
 os.system("cls")
-print('''    _                               _             _               _                                    _   
+print(Fore.GREEN,'''    _                               _             _               _                                    _   
    (_)   ___   _   _  __  __     __| |  _   _    | |__     __ _  | |_    ___    _ __    _ __     ___  | |_ 
    | |  / _ \ | | | | \ \/ /    / _` | | | | |   | '_ \   / _` | | __|  / _ \  | '_ \  | '_ \   / _ \ | __|
    | | |  __/ | |_| |  >  <    | (_| | | |_| |   | |_) | | (_| | | |_  | (_) | | | | | | | | | |  __/ | |_ 
@@ -16,12 +18,23 @@ print("21")
 print("[] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] []")
 
 
+joueur=random.randint(1,2)
+
+
+
 #boucle while
 while i==1:
-    
-    # Joueur
-    print("Joueur ",joueur)
-    batonnets_input=input("combien voulez vous enlever ?(1, 2, 3):")
+    if joueur==1:
+        print(Fore.RED,"Joueur ",joueur)
+    else:
+        print(Fore.BLUE,"Joueur ",joueur)
+
+
+
+
+   
+    print(Fore.WHITE,"combien voulez vous enlever ?(1, 2, 3)")
+    batonnets_input=input(":")
     
 
     if batonnets_input=="1" or batonnets_input=="2" or batonnets_input=="3":
@@ -32,7 +45,12 @@ while i==1:
         print(nombre_batonnets*"[] ")
         
         if nombre_batonnets==1 or nombre_batonnets<1:
-            print("Joueur",joueur,"à gagné")
+            
+            if joueur==1:
+                print(Fore.RED,"Joueur ",joueur)
+            else:
+                print(Fore.BLUE,"joueur",joueur)
+
             break
 
         if joueur==1:
