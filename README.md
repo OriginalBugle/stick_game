@@ -3,6 +3,13 @@ this is the famous stick game
 
 
 ## Installation
+1.Clone the repository:
+   ```shell
+   git clone https://github.com/OriginalBugle/stick_game.git
+   ```
+
+
+
   3. Install the required dependencies:
   ```shell
   pip install requirements.txt
