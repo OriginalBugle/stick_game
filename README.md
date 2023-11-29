@@ -3,6 +3,6 @@ this is the famous stick game
 
 
 3
-'''shell
+```shell
 pip install requirements.txt
-'''
+```
