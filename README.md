@@ -7,7 +7,10 @@ this is the famous stick game
    ```shell
    git clone https://github.com/OriginalBugle/stick_game.git
    ```
-
+2.Navigate to the project directory:
+```shell
+cd stick_game
+```
 
 
   3. Install the required dependencies:
