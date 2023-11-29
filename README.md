@@ -1,5 +1,5 @@
 this is the famous stick game 
-![image](https://github.com/OriginalBugle/stick_game/assets/149625219/0ec588a8-fe04-4203-8878-a34ced045bb0)
+![image](https://github.com/OriginalBugle/stick_game/assets/149625219/95205153-dc51-4f50-a32e-36db245c95ff)
 
 
 ## Installation
